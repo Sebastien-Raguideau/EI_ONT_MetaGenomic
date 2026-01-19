@@ -4,15 +4,15 @@ The aim of this tutorial is to go from reads to Mags placed in a phylogenetic tr
 
 The workflow is quite typical and involve
 
-1. [Assembly](#assembly)
+1. Assembly
 
-2. [Read mapping](#readmapping)
+2. Read mapping
 
-3. [Contig binning](#binning)
+3. Contig binning
 
-4. [Bin quality ](#checkm)
+4. Bin quality
 
-5. [Phylogenetic tree placement](#gtdb)
+5. Phylogenetic tree placement
  
 
 
@@ -50,7 +50,7 @@ Conda environment are created as independant environment to everything else, you
 
 
 ## Assembly
-<a name="assembly"/>
+
 
 Let's create a Projects directory and work inside:
 
@@ -91,7 +91,7 @@ How would we go for estimating the number of organisms in the assembly?<br />
 What do we do with an assembly?<br />
 
 
-<a name="readmapping"/>
+
 
 ## Read mapping
 
@@ -164,7 +164,7 @@ done
 
 ```
 
-<a name="binning"/>
+
 
 ## Contig binning
 
