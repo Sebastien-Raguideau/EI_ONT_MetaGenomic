@@ -159,7 +159,7 @@ do
    
    echo $name
 
-  minimap2 -ax lr:hq --sam-hit-only -t 16 assembly/contigs.fasta.gz $file | samtool view -h -b -S - | samtools sort - > Map/$name.sorted.bam
+  minimap2 -ax lr:hq --sam-hit-only -t 16 Assembly/contigs.fasta.gz $file | samtool view -h -b -S - | samtools sort - > Map/$name.sorted.bam
 done
 
 ```
@@ -172,7 +172,7 @@ The first step is to derive coverage from bam files. For this we can use metabat
 
 ```bash
 cd ~/Projects/MAGs/Map
-jgi_summarize_bam_contig_depths --outputDepth depth.txt *.bam
+jgi_summarize_bam_contig_depths --outputDepth depth.txt *sorted.bam
 ```
 
 Make a new subfolder Binning. Move the Coverage file into this and look into crafting the metabat2 command line. Either use the help flag or a quick google search.
